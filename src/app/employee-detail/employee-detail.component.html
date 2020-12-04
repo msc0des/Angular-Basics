@@ -1,0 +1,10 @@
+
+<h2>Employee Detail From Google Firebase</h2>
+<ul (click)="onSelect(emp)" [class.selected]="isselected(emp)" *ngFor="let emp of employees">
+  <a class="badge">{{emp.id}}-{{emp.name}}-{{emp.age}}</a>
+</ul>
+<h2>{{errmsg}}</h2>
+<!-- <button class="mdc-button mdc-button--outlined">
+  <div class="mdc-button__ripple"  ></div>
+  <span class="mdc-button__label" *ngFor="let emp of employees">{{emp.id}}-{{emp.name}}-{{emp.age}} </span>
+</button> -->

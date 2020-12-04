@@ -1,0 +1,19 @@
+h1 {
+  font-family: verdana;
+  font-size: 30px;
+  color: rgb(231, 21, 102);
+}
+.text-success {
+  color: green;
+}
+.vow {
+  color: rgb(143, 10, 32);
+}
+.date {
+  /* margin-right: 5px;
+  position: relative;
+  float: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}

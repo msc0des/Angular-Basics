@@ -1,0 +1,64 @@
+
+<h1 *ngIf='true'>Hello {{name}}!!</h1>
+<input [id]="myid" type="text" value= "Sam">
+
+<h2 [class]="successClass">Mrlostandfaded</h2>
+<button (click)="onClick($event)">Greet</button>
+{{greetings}}
+<div>
+  <hr>
+<div>
+  <input #inputval type="text" placeholder="log text on console">
+  <button (click)="onLog(inputval.value)">Log</button>
+
+</div>
+<!-- <h2>TWO WAY DATA BINDING BELOW</h2> -->
+<div>
+  <input [(ngModel)]="user" type="text" placeholder="Enter any text">
+  {{user}}
+</div>
+</div>
+<div>
+<h2 *ngIf="flag;else elseblock">
+  Codevolution
+</h2>
+<ng-template #elseblock>
+  <h2>Content Hidden</h2>
+</ng-template>
+</div>
+
+<h2>NG SWITCH</h2>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">You picked Red</div>
+  <div *ngSwitchCase="'Blue'">You picked Blue</div>
+  <div *ngSwitchCase="'Pink'">You picked Pink</div>
+<div *ngSwitchDefault>Pick Color Again</div>
+</div>
+
+<div class="vow" *ngFor ="let v of vowels;index as i">
+  <h2>
+{{i+" "}}{{v}}
+  </h2>
+</div>
+<div>
+  <h2>Hello {{name2}} from appComponent to Child component</h2>
+</div>
+
+<button (click)="fireevent()">Send Event from Child to Parent</button>
+<h2>
+  JSON Format Data
+{{person |json}}
+</h2>
+
+  <h2 class="date">
+    {{date|date:'mediumDate'}}
+    {{date|date:'mediumTime'}}
+  </h2>
+
+
+
+
+
+
+
+

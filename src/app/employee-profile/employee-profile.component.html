@@ -1,0 +1,12 @@
+<p>You selected Employee with id {{empid}}</p>
+
+<p>
+  <button (click)="showOverview()">Overview</button>
+  <button (click)="showAge()">Age</button>
+</p>
+<router-outlet></router-outlet>
+<button (click)="goPrevious()" >Previous</button> |
+<button (click)="goNext()">Next</button>
+<div>
+  <p><button (click)="gotoEmployeedetail()">Back</button></p>
+</div>

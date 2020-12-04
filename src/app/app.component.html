@@ -1,0 +1,14 @@
+<div class="a">
+  <h1 style="background-color:rgb(69, 243, 199);">Welcome To {{title}}</h1>
+  <h1 style="background-color:rgb(19, 124, 223);">{{message|uppercase}}</h1>
+
+</div>
+  <!-- <app-component1 (childEvent)="message=$event" [parentData]="name2"></app-component1> -->
+
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a> |
+  <a routerLink="/employee-detail" routerLinkActive="active">Employee-Detail</a> |
+  <a routerLink="/employee-list" routerLinkActive="active">Employee-List</a>
+
+</nav>
+<router-outlet></router-outlet>
